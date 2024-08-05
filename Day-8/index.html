@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .mainbox{
+        width: 100%;
+        height: auto;
+    }
+    .box1{
+        width: 100%;
+        height: 50px;
+        background-color: red;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    
+    }
+    .box1 i{
+        font-size: 30px;
+    }
+    .box2{
+       
+        display: none;
+      transition: linear 1s;
+    }
+    .box2.active{
+        display: flex;
+        width: 100%;
+        height: 200px;
+        background-color: yellow;
+        transition: linear 1s;
+
+    }
+</style>
+<body>
+   <div class="mainbox">
+    <div class="box1"><i class="fa fa-angle-down"></i></div>
+    <div class="box2"></div>
+   </div>
+   <div class="mainbox">
+    <div class="box1"><i class="fa fa-angle-down"></i></div>
+    <div class="box2"></div>
+   </div>
+   <div class="mainbox">
+    <div class="box1"><i class="fa fa-angle-down"></i></div>
+    <div class="box2"></div>
+   </div>
+    
+</body>
+<script src="jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        
+        $(".box1").click(function(){
+            $(".box2").removeClass("active");
+            $(".fa-angle-up").removeClass("fa-angle-up")
+            $(this).next(".box2").addClass("active");
+            $(this).children().addClass("fa-angle-up")
+        })
+        // $(this).toggleClass("fa-angle-down fa-angle-up");
+        // $(this).not("box1").click(function(){
+
+        //     $(".box2").slideUp(500)
+        // })
+        // $(".box2").removeClass(".active")
+        // $(".box2").not(".active").slideUp()
+    })
+</script>
+</html>

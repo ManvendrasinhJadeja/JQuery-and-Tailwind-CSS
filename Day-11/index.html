@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- tailwind -->
+    <link href="output.css" rel="stylesheet" />
+    <!-- tailwind -->
+    <!-- RemixIcons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- RemixIcons -->
+  </head>
+  <body>
+    <div class="Container flex w-100 h-[100vh]">
+      <div
+        class="sidebar w-auto h-full px-[20px] bg-[#1f1f1f] flex flex-col justify-between pt-[20px] pb-[30px] items-center border-r border-[#373737] text-white text-[20px]"
+      >
+        <img src="./Assets/logo-icon.svg" class="w-[30px]" />
+        <i class="ri-timer-2-line text-[#6A69F5]"></i>
+        <i class="ri-apps-2-line"></i>
+        <i class="ri-box-3-line"></i>
+        <i class="ri-flashlight-line"></i>
+        <i class="ri-pie-chart-line"></i>
+        <i class="ri-at-fill"></i>
+        <i class="ri-drag-move-line"></i>
+        <i class="ri-file-chart-line"></i>
+        <i class="ri-table-line"></i>
+        <i class="ri-user-line"></i>
+        <i class="ri-pages-line"></i>
+        <i class="ri-layout-3-line"></i>
+        <i class="ri-git-repository-private-line"></i>
+        <i class="ri-list-check"></i>
+        <i class="ri-article-line"></i>
+      </div>
+
+      <div class="Container-2 w-[96%] h-[100vh] relative right-0 bg-[#151515] flex flex-col">
+        <div
+          class="navbar sticky right-0 h-[60px] w-100 bg-[#1f1f1f] text-[#706e6e] border-b border-[#373737] flex justify-between items-center"
+        >
+          <div
+            class="navLeft w-auto flex items-center gap-2 text-white ps-[10px]"
+          >
+            <i class="ri-menu-2-line text-[24px]"></i>
+            <div
+              class="searchbarAtNav hidden w-[350px] h-[40px] border border-[#373737] rounded-[3px] bg-[#151515] md:flex items-center justify-between px-[1vw]"
+            >
+              <input
+                class="outline-none bg-transparent w-[300px] placeholder:text-[#706e6e] placeholder:text-[15px] text-[#cfcece] text-[15px]"
+                type="text"
+                placeholder="Search..."
+              />
+              <i class="ri-search-line text-[#cfcece]"></i>
+            </div>
+          </div>
+          <div class="navRight flex items-center text-white gap-3 text-[20px]">
+            <i class="ri-fullscreen-line"></i>
+            <i class="ri-sun-line"></i>
+            <i class="ri-notification-3-line"></i>
+            <div class="userProfile flex items-center gap-2">
+              <img
+                class="w-[30px] h-[30px] rounded-[50%]"
+                src="./Assets/user (1).png"
+              />
+              <p class="text-[15px] flex items-center gap-1">
+                Stevens L.<i
+                  class="ri-arrow-drop-down-line text-[35px] text-[#cfcece]"
+                ></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="droplist w-[200px] h-[300px] float-right text-white">
+          <p><i class="ri-user-line"></i> Profile</p>
+                <p><i class="ri-equalizer-line"></i> Settings</p>
+                <p><i class="ri-question-answer-line"></i> Messages</p>
+                <p><i class="ri-customer-service-2-line"></i> Support</p>
+                <div class="line w-100 border-t border-t-[#505050] ml-[-15px]"></div>
+                <p><i class="ri-logout-circle-r-line"></i> Log Out</p>
+
+        </div>
+        
+
+        
+      </div>
+    </div>
+  </body>
+  <script src="./jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".userProfile").click(function(){
+        $(".dropList").fadeToggle(200)
+
+      })
+    })
+  </script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- tailwind -->
+    <link href="output.css" rel="stylesheet" />
+    <!-- tailwind -->
+    <!-- RemixIcons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- RemixIcons -->
+  </head>
+  <body>
+    <div class="container flex "> 
+      <div class="container1 w-[2%] bg-zinc-950 h-full"></div>
+      <div class="container2 w-[98%] relative right-0 top-0 h-full bg-black" ></div>
+    </div>
+  </body>
+  <script src="./jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".userProfile").click(function(){
+        $(".dropList").fadeToggle(200)
+
+      })
+    })
+  </script>
+</html>

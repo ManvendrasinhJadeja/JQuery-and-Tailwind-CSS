@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header>
+
+        <div class="nav">
+            <div class="l">
+                <a href="#" style="display: block;">HOME</a>
+                <a href="#">BAND</a>
+                <a href="#">TOUR</a>
+                <a href="#">CONTACT</a>
+                <a href="#">MORE</a>
+            </div>
+            <div class="navdrop">
+                <a href="#">HOME</a>
+                <a href="#">BAND</a>
+                <a href="#">TOUR</a>
+                <a href="#">CONTACT</a>
+                <a href="#">MORE</a>
+              </div>
+            <div class="r">
+                <i class="ri-menu-line"></i>
+                <i class="ri-search-line"></i>
+            </div>
+        </div>
+        <div class="slider">
+            
+            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+            centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+            <swiper-slide>
+                <div class="bg1 bg">
+                    <div class="txt"><h2>
+                        Chicago
+                    </h2>
+                    <p>Thank you, Chicago - A night we won't forget.
+                        
+                    </p>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="bg2 bg">
+                <div class="txt"><h2>
+                    New York
+                </h2>
+                <p>The atmosphere in New York is lorem ipsum.
+                    
+            </p>
+            </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="bg3 bg">
+                <div class="txt"><h2>
+                    Los Angeles
+                </h2>
+                <p>We had the best time playing at Venice Beach!
+                    
+                    THE BAND
+                </p>
+            </div>
+        </div>
+    </swiper-slide>
+    
+</div>
+
+
+</swiper-container>
+</header>
+    <div class="s2 ">
+        <h1>THE BAND
+        </h1>
+        <span>We love music
+
+        </span>
+        <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+        </p>
+        <div class="rw w-100 h-[100px] gap-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
+            <div class="c w-[150px]"><p>Name</p>
+                <img src="./assets/bandmember.jpg" alt=""></div>
+            <div class="c w-[150px]"><p>Name</p>
+                <img src="./assets/bandmember.jpg" alt=""></div>
+            <div class="c w-[150px]"><p>Name</p>
+                <img src="./assets/bandmember.jpg" alt=""></div>
+          
+            
+        </div>
+    </div>
+
+
+<div class="s3">
+    <h1>CONTACT</h1>
+    <span>Fan? Drop a note!
+
+    </span>
+    <div class="ct w-100  grid grid-cols-1 gap-2 sm:grid-cols-2 " >
+        <div class="l w-[100%] sm:w-[50%]">
+            <div style="display: flex; gap: 1vw;"><i class="ri-map-pin-fill"></i> Chicago, US</div>
+            <div style="display: flex; gap: 1vw;"><i class="ri-phone-fill"></i> Phone: +00 151515
+            </div>
+            <div style="display: flex ;gap: 1vw;"><i class="ri-mail-fill">
+            </i>Email: mail@mail.com</div>
+        </div>
+        <div class="r w-[100%] sm:w-[50%]">
+            <div class="r1"><input type="text" placeholder="Name"><input type="email" placeholder="Email"></div>
+            <div class="r1 r2"><input type="text" placeholder="Message"></div>
+            
+            <div class="sb">SEND</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+
+</body>
+<script src="./jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".navdrop").hide();
+      $(".ri-menu-line").click(function () {
+        $(".navdrop").slideToggle(500);
+      });
+    });
+  </script>
+</html>

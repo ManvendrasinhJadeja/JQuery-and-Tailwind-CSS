@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="nav">
+        <div class="navLeft">
+            <h1>LOGO</h1>
+        </div>
+        <div class="navRight">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">portfolio</a>
+        <a href="#">contact</a>
+        </div>
+        <div class="menubar">
+            <i class="ri-menu-line"></i>
+        </div>
+    </div>
+    <div class="dropDown">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">portfolio</a>
+        <a href="#">contact</a>
+    </div>
+</body>
+<script src="./jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".dropDown").hide()
+
+        $(".ri-menu-line").click(function(){
+            // $(".dropDown").fadeToggle(1000)
+            $(".dropDown").slideToggle(500)
+        })
+    })
+</script>
+</html>
